@@ -48,9 +48,14 @@ ActiveRecord::Schema.define(version: 20140310213728) do
 
   create_table "profiles", force: true do |t|
     t.integer  "user_id"
+    t.boolean  "verified"
+    t.string   "name"
+    t.string   "tagline"
+    t.string   "twitter_handle"
     t.text     "story"
     t.string   "highlight_video_url"
     t.string   "profile_photo_url"
+    t.string   "category"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
