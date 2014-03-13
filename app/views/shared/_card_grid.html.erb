@@ -1,10 +1,10 @@
 <div class="card-container container">
 	<% posts.each_slice(3) do |slice| %>
-	<div class="row">
-		<% slice.each do |post| %>
-			<%= render partial: 'shared/card', locals: { post: post } %>
-		<% end %>
-	</div>
+		<div class="row">
+			<% slice.each do |post| %>
+				<%= render partial: 'shared/card', locals: { post: post } %>
+			<% end %>
+		</div>
 	<% end %>
 </div>
 
