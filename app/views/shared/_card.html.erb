@@ -1,5 +1,5 @@
 <div class="card col-md-4">
 	<div class="card-title"> <%= post.title %> </div>
-	<%= image_tag 'http://placehold.it/250x150' %>
+	<%= image_tag post.thumbnail_url, size: '300x200' %>
 	<div class="card-description"><%= post.description %></div>
 </div>
