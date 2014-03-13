@@ -4,6 +4,8 @@ class CreateMetrics < ActiveRecord::Migration
     	t.integer	:fb_likes
     	t.integer	:clicks
     	t.integer	:views
+
+    	t.timestamps
     end
   end
 end
